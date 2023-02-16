@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de IMC</h1>
+        <div class="calculator">
+            <input type="number" id="weight" placeholder="Peso" autofocus/>
+            <input type="number" id="height" placeholder="Altura" />
+            <p id="result"> </p>
+            <button id="calculate">Calcular</button>
+            <button id="info">Mais Informações</button>
+        </div>
+        <div class="modal" id="infoModal">
+            <div class="modal-content">
+                <span id="closeModal">&times;</span>
+                <div id="message" class="message"></div>
+                <div id="messageForImc"></div>
+                <p>O IMC (Índice de Massa Corporal) é uma medida que avalia a relação entre o peso e a altura de uma pessoa. Ele é usado como indicador de uma possível obesidade ou desnutrição. A fórmula para calcular o IMC é:</p>
+                <p><b><blockquote>IMC = peso / altura²</p></b></blockquote>
+                <p>O resultado do cálculo pode ser interpretado de acordo com a seguinte tabela:</b>
+                <ul>
+                    <li class="lowWeight">IMC abaixo de 18,5: abaixo do peso</li>
+                    <li class="normalWeight">IMC entre 18,5 e 24,9: peso normal</li>
+                    <li class="upperWeight">IMC entre 25 e 29,9: sobrepeso</li>
+                    <li class="obesityOne">IMC entre 30 e 34,9: obesidade grau 1</li>
+                    <li class="obesityTwo">IMC entre 35 e 39,9: obesidade grau 2</li>
+                    <li class="morbidObesity">IMC acima de 40: obesidade grau 3 (mórbida)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/program.js" defer></script>
+</body>
+</html>
